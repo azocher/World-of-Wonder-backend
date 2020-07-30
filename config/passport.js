@@ -1,7 +1,7 @@
 require('dotenv').config()
 const JwtStrat = require('passport-jwt').Strategy
 const ExtractJwt = require('passport-jwt').ExtractJwt
-const User = require('../models/User')
+const User = require('../Models/User')
 
 const opts = {}
 opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken()
